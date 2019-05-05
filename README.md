@@ -8,7 +8,7 @@ You can check every SQL EXPLAIN from development log, without :hand: executions.
 
 It's no configuration, and you can puts SQL EXPLAIN of every queries to logs.
 
-![](https://github.com/yhirano55/activerecord-explainer/blob/master/images/capture.png?raw=true)
+![](https://github.com/yhirano55/activerecord-explainer/blob/master/images/v0.2.0.png?raw=true)
 
 ## Installation
 
