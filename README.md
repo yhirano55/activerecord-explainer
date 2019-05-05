@@ -2,7 +2,7 @@
 
 This gem automatically logs `SQL EXPLAIN` of every queries.
 
-You can check naturally every SQL EXPLAIN from development log, without :hand: executions.
+You can check naturally every `SQL EXPLAIN` from development log, without :hand: executions.
 
 ## Usage
 
