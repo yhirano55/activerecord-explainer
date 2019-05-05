@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activerecord-explainer (0.1.0)
+    activerecord-explainer (0.2.0)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
 
