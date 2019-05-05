@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors       = ['Yoshiyuki Hirano']
   s.email         = ['yhirano@me.com']
   s.homepage      = 'https://github.com/yhirano55/activerecord-explainer'
-  s.summary       = %(activerecord-explainer logs automatically SQL EXPLAIN of every queries)
-  s.description   = s.summary
+  s.summary       = %(This gem automatically logs SQL EXPLAIN of every queries)
+  s.description   = %(This gem automatically logs SQL EXPLAIN of every queries. You can check naturally every SQL EXPLAIN from development log, without manually executions.)
   s.license       = 'MIT'
   s.files         = Dir.chdir(File.expand_path('.', __dir__)) do
     `git ls-files -z`.split("\x0").reject do |f|

@@ -1,12 +1,12 @@
 # ActiveRecord::Explainer
 
-activerecord-explainer logs automatically `SQL EXPLAIN` of every queries.
+This gem automatically logs `SQL EXPLAIN` of every queries.
 
-You can check every SQL EXPLAIN from development log, without :hand: executions.
+You can check naturally every SQL EXPLAIN from development log, without :hand: executions.
 
 ## Usage
 
-It's no configuration, and you can puts SQL EXPLAIN of every queries to logs.
+If you use Rails, it's no configuration, and you can logs SQL EXPLAIN of every queries.
 
 ![](https://github.com/yhirano55/activerecord-explainer/blob/master/images/v0.2.0.png?raw=true)
 
