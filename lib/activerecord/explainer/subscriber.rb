@@ -1,13 +1,13 @@
-require 'active_support/subscriber'
+require 'active_support/log_subscriber'
 
 module ActiveRecord
   module Explainer
-    class Subscriber < ActiveSupport::Subscriber # :nodoc:
+    class Subscriber < ActiveSupport::LogSubscriber # :nodoc:
       def sql(event)
         payload = event.payload
         return if ignore_payload?(payload) || !ActiveRecord::Base.connection.supports_explain?
 
-        logger.debug exec_explain(sql: payload[:sql], binds: payload[:binds])
+        debug exec_explain(sql: payload[:sql], binds: payload[:binds])
       end
 
       private
@@ -29,7 +29,7 @@ module ActiveRecord
         end
         msg << "\n"
         msg << ActiveRecord::Base.connection.explain(sql, binds)
-        msg
+        color(msg, :yellow)
       end
 
       def render_bind(attr)
