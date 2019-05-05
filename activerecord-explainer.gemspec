@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Yoshiyuki Hirano']
   s.email         = ['yhirano@me.com']
   s.homepage      = 'https://github.com/yhirano55/activerecord-explainer'
-  s.summary       = %(activerecord-explainer puts SQL EXPLAIN of every queries to development log)
+  s.summary       = %(activerecord-explainer logs automatically SQL EXPLAIN of every queries)
   s.description   = s.summary
   s.license       = 'MIT'
   s.files         = Dir.chdir(File.expand_path('.', __dir__)) do

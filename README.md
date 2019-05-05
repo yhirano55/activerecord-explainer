@@ -1,6 +1,6 @@
 # ActiveRecord::Explainer
 
-activerecord-explainer puts `SQL EXPLAIN` of every queries to **development** log.
+activerecord-explainer logs automatically `SQL EXPLAIN` of every queries.
 
 You can check every SQL EXPLAIN from development log, without :hand: executions.
 
