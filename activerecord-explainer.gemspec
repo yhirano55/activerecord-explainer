@@ -26,8 +26,8 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.2.2'
   s.required_rubygems_version = '>= 1.8.11'
 
-  s.add_dependency 'activerecord', '>= 5.2'
-  s.add_dependency 'activesupport', '>= 5.2'
+  s.add_dependency 'activerecord', '>= 5.1'
+  s.add_dependency 'activesupport', '>= 5.1'
 
   s.add_development_dependency 'bundler', '~> 2.0'
   s.add_development_dependency 'rake', '~> 10.0'
