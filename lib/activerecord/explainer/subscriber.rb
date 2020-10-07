@@ -7,7 +7,12 @@ module ActiveRecord
         payload = event.payload
         return if ignore_payload?(payload) || !ActiveRecord::Base.connection.supports_explain?
 
+        # Save `affected_rows` and restore after issuing EXPLAIN query because
+        # the query will resets `affected_rows` to 0.
+        original_affectet_rows = affected_rows
         debug exec_explain(sql: payload[:sql], binds: payload[:binds])
+      ensure
+        affectet_rows = original_affectet_rows
       end
 
       private
